@@ -10,6 +10,11 @@ bot.on("message", (msg) => {
   bot.sendMessage(
     chatId,
     `Бот переехал!!!
-Текущий адресс: @goodfood_bsln_bot`
+Текущий адресс: @goodfood_bsln_bot`,
+    {
+      reply_markup: {
+        remove_keyboard: true,
+      },
+    }
   );
 });
